@@ -1,0 +1,50 @@
+.portfolio_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 6rem;
+}
+.portfolio_container > div {
+  width: 25%;
+  height: 40%;
+  background-color: var(--color-bg-varient);
+  padding: 20px;
+  border-radius: 30px;
+}
+.portfolio_container > div > p {
+  font-size: smaller;
+}
+.portfolio_container > div > button {
+  margin-right: 5px;
+}
+
+.portfolio_container > div > img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+/***************/
+@media screen and (max-width: 1024px) {
+  .portfolio_container {
+    gap: 2rem;
+  }
+  .portfolio_container > div {
+    width: 40%;
+    height: 30%;
+  }
+}
+/***********************/
+@media screen and (max-width: 600px) {
+  .push {
+    margin-top: 35rem;
+  }
+  .portfolio_container {
+    gap: 1rem;
+  }
+  .portfolio_container > div {
+    width: 80%;
+    height: 30%;
+  }
+}

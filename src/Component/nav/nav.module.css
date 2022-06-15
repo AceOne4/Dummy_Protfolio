@@ -1,0 +1,27 @@
+nav {
+  background: rgb(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  position: fixed;
+  height: 30px;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  height: 45px;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  z-index: 2;
+}
+nav > a {
+  padding: 10px 12px;
+  background-color: transparent;
+  border-radius: 36%;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+nav > a.active {
+  background-color: var(--color-primier-varient);
+  color: var(--color-white);
+}
